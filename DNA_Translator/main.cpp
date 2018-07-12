@@ -11,11 +11,15 @@ int main( int argc, char* argv[] ) {
 		printf( "arg%d: %s\n", i, argv[i] );
 	}
 
-    std::map<std::string, char>::iterator it;
+    //std::map<const char*, char>::iterator it;
 
-    for (it = DNAToProteinMap.begin(); it != DNAToProteinMap.end(); it++) {
-        std::cout << it->first << " ";
-        std::cout << it->second << std::endl;
+    // for (it = DNAToProteinMap.begin(); it != DNAToProteinMap.end(); it++) {
+    //     std::cout << it->first << " ";
+    //     std::cout << it->second << std::endl;
+    // }
+
+    for (std::pair<std::string, char> e : DNAToProteinMap) {
+        std::cout << e.first << std::endl;
     }
 
 	return 0;

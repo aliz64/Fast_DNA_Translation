@@ -1,2 +1,5 @@
 translator: main.cpp
-	g++ main.cpp -o translator
+	nvcc main.cpp -o translator.o
+
+clean:
+	rm *.o

@@ -2,9 +2,8 @@
 #define TABLE_H
 
 #include <map>
-#include <string>
 
-std::map<std::string, char> DNAToProteinMap(
+std::map<const char*, char> DNAToProteinMap(
 {
     {"TTT", 'F'},   {"TCT", 'S'},   {"TAT", 'Y'},   {"TGT", 'C'},
     {"TTC", 'F'},   {"TCC", 'S'},   {"TAC", 'Y'},   {"TGC", 'C'},
