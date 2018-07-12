@@ -1,2 +1,2 @@
-translator: main.cu
-	nvcc main.cu -o translator
+translator: main.cpp
+	g++ main.cpp -o translator
